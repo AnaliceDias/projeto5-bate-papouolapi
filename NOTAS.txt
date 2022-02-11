@@ -1,3 +1,4 @@
-trello
-repositório
 layout
+>> layout das mensagem
+
+resolvendo: quebra de linha para mensagens longas
