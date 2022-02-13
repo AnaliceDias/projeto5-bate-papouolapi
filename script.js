@@ -43,7 +43,7 @@ function exibirMensagens(resultado){
     for(let i=0; i< mensagens.length; i++){
         if(mensagens[i].type === "status"){
             main.innerHTML+= `
-            <div class="entrouOuSaiuDaSala mensagem" >
+            <div class="entrouOuSaiuDaSala" data-identifier="message">
             <p class="textoDaMensagem">
                 <span class="horario">(${mensagens[i].time})</span>
                 <strong class="usuario">${mensagens[i].from}</strong>
@@ -53,7 +53,7 @@ function exibirMensagens(resultado){
             `
         }else if (mensagens[i].type === "message" && mensagens[i].to === "Todos"){
             main.innerHTML+=`
-            <div class="mensagemPublica mensagem" >
+            <div class="mensagemPublica" data-identifier="message">
             <p>
                 <span class="horario">(${mensagens[i].time})</span>
                 <strong class="usuario">${mensagens[i].from}</strong>
@@ -66,7 +66,7 @@ function exibirMensagens(resultado){
             `
         }else if (mensagens[i].type === "private_message" && (mensagens[i].to === nomeDoUsuario.name || mensagens[i].from === nomeDoUsuario.name)){
             main.innerHTML+=`
-            <div class="mensagemPrivada mensagem" >
+            <div class="mensagemPrivada" data-identifier="message">
             <p>
                 <span class="horario">(${mensagens[i].time})</span>
                 <strong class="usuario">${mensagens[i].from}</strong>
