@@ -1,4 +1,20 @@
-layout
->> layout das mensagem
+	#Requisito 2: Chat
+[OK] Realizar um pedido para receber as mensagens do servidor e carregá-las na página
+[OK] Atualizar as mensagens a cada 3 segundos
+[OK] Rolagem automática das mensagens
 
-resolvendo: quebra de linha para mensagens longas
+	#Requisito 3: Entrar na sala
+[OK] Perguntar o nome do usuário por meio de um prompt
+[OK] Enviar o nome do usuário para o servidor
+[OK] Verificar se já há um nome igual cadastrado
+[OK] Enviar confirmação de presença do usuário a cada 5 segundos
+
+	#Requisito 4: Envio de mensagem
+
+
+
+#Problemas atuais
+
+
+#Dúvidas para esclarecer com vini:
+como garantir o posicionamento correto dos elementos na tela mesmo quando não há mensagens carregadas?
