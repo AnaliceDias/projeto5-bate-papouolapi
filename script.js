@@ -25,6 +25,7 @@ function processarCadastro(resultado){
         return
     }else {
         nomeDoUsuario = {name: prompt("Este nome já está em uso. Informe um novo nome de usuário:")};
+        cadastrarUsuario();
     }
 }
 
@@ -96,4 +97,38 @@ function buscarMensagens(){
     );
 }
 
+function enviarMensagem(){
+    let mensagem = (document.querySelector("input")).value;
+
+    if(mensagem===""|| mensagem===null){
+        return;
+    }
+    else {
+        let requisicao = axios.post("https://mock-api.driven.com.br/api/v4/uol/messages",
+        {
+        from: nomeDoUsuario.name,
+        to: "Todos",
+        text: mensagem,
+        type: "message"
+        }
+        );
+    
+        requisicao.then(function (){
+            console.log("Mensagem do usuário enviada com sucesso");
+        })
+
+        buscarMensagens();
+
+        requisicao.catch(function (){
+            console.log("Erro ao enviar mensagem do usuário");
+            window.location.reload()
+        })
+    }
+    
+    document.querySelector("input").value ='';
+    
+}
+
+
+//============================Funções executadas ao iniciar o programa============================
 cadastrarUsuario()

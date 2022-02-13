@@ -1,20 +1,28 @@
-	#Requisito 2: Chat
-[OK] Realizar um pedido para receber as mensagens do servidor e carregá-las na página
-[OK] Atualizar as mensagens a cada 3 segundos
-[OK] Rolagem automática das mensagens
-
-	#Requisito 3: Entrar na sala
-[OK] Perguntar o nome do usuário por meio de um prompt
-[OK] Enviar o nome do usuário para o servidor
-[OK] Verificar se já há um nome igual cadastrado
-[OK] Enviar confirmação de presença do usuário a cada 5 segundos
-
 	#Requisito 4: Envio de mensagem
+[OK] Enviar mensagem para o servidor (respeitar formato do objeto) (a princípio, todas mensagens enviadas serão públicas)
+- Caso o servidor responda com sucessor, atualizar novamente as mensagens na tela (antecipadamente)
+- Caso o servidor responda com erro, recarregue a página com window.location.reload() (ousuário não está mais logado)
+- Commit
 
+	#Bônus 3: Tela de entrada
+- Em vez de um prompt, faça uma tela inicial, seguindo o layout sugerido
+- Enquanto as mensagens carregam deve haver uma imagens de "carregando" na tela.
+- Incluir atributos de correção automática nos elementos
+- Commit
 
+	#Bônus 3: Envio com enter
+- Enviar mensagem com tecla "enter" [Bônus]
+- Commit
+
+#Bônus 1: Participante ativo
+{só executar se conseguir implementar os demais bônus}
+- Commit
+
+=========================X===========================
 
 #Problemas atuais
 
 
 #Dúvidas para esclarecer com vini:
 como garantir o posicionamento correto dos elementos na tela mesmo quando não há mensagens carregadas?
+O que o servidor recebe quando a mensagem enviada só em espaços?
