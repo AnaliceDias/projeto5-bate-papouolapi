@@ -1,9 +1,3 @@
-	#Requisito 4: Envio de mensagem
-[OK] Enviar mensagem para o servidor (respeitar formato do objeto) (a princípio, todas mensagens enviadas serão públicas)
-- Caso o servidor responda com sucessor, atualizar novamente as mensagens na tela (antecipadamente)
-- Caso o servidor responda com erro, recarregue a página com window.location.reload() (ousuário não está mais logado)
-- Commit
-
 	#Bônus 3: Tela de entrada
 - Em vez de um prompt, faça uma tela inicial, seguindo o layout sugerido
 - Enquanto as mensagens carregam deve haver uma imagens de "carregando" na tela.
@@ -11,7 +5,7 @@
 - Commit
 
 	#Bônus 3: Envio com enter
-- Enviar mensagem com tecla "enter" [Bônus]
+[OK] Enviar mensagem com tecla "enter" [Bônus]
 - Commit
 
 #Bônus 1: Participante ativo

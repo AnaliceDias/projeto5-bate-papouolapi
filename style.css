@@ -110,6 +110,13 @@ footer input {
 
     border-style: none;
 }
+
+::placeholder {
+    color:#000000;
+    opacity: 1;
+
+}
+
 footer button{
     margin-left: 14px;
 

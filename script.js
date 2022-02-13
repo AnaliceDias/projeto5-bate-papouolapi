@@ -1,6 +1,15 @@
 let nomeDoUsuario = {name: prompt("Informe seu nome de usuário:")};
 console.log(nomeDoUsuario);
 
+let input = document.querySelector("input");
+input.addEventListener("keypress", function (evento){
+    if(evento.key === "Enter" ){
+        enviarMensagem();
+    }else{
+        return;
+    }
+});
+
 function confirmarPresencaDoUsuario(){
     let requisicao = axios.post("https://mock-api.driven.com.br/api/v4/uol/status", nomeDoUsuario);
     requisicao.then(
